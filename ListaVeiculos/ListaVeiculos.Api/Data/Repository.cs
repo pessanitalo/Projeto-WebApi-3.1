@@ -42,9 +42,13 @@ namespace ListaVeiculos.Api.Data
             return query.ToArray();
         }
 
-        public Cliente[] GetAlunosVeiculosId()
+        public Cliente GetAlunoVeiculosId(int id)
         {
-            throw new System.NotImplementedException();
+            IQueryable<Cliente> query = _dataContext.Clientes;
+            query = query.Include(a => a.Veiculos).
+
+            Where(a => a.Id == id);
+            return query.FirstOrDefault();
         }
 
         public Cliente GetAlunoBYId(int id)
@@ -69,9 +73,13 @@ namespace ListaVeiculos.Api.Data
             throw new System.NotImplementedException();
         }
 
-        public Veiculo GetVeiculoById()
+        public Veiculo GetVeiculoById(int id)
         {
-            throw new System.NotImplementedException();
+            IQueryable<Veiculo> query = _dataContext.Veiculos;
+            query = query.AsNoTracking()
+                .OrderBy(c => c.Id)
+                .Where(c => c.Id == id);
+            return query.FirstOrDefault();
         }
     }
 }

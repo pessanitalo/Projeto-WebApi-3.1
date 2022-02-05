@@ -34,6 +34,16 @@ namespace ListaVeiculos.Api.Controllers
         }
 
         //Ok
+        [HttpGet("clienteVeiculos/{id}")]
+        public IActionResult getClienteByVeiculosId(int id)
+        {
+            var cliente = _repository.GetAlunoVeiculosId(id);
+            if (cliente == null) return BadRequest("Cliente não encontrado");
+
+            return Ok(cliente);
+        }
+
+        //Ok
         [HttpPost]
         public IActionResult Post(Cliente cliente)
         {

@@ -11,13 +11,13 @@ namespace ListaVeiculos.Api.Data
 
         //clientes
         Cliente[] GetAlunos();
-        Cliente[] GetAlunosVeiculosId();
+        Cliente GetAlunoVeiculosId(int id);
         Cliente GetAlunoBYId(int id);
 
         //veiculos
         Veiculo[] Getveiculos();
         Veiculo[] GetAllVeiculosByClienteId();
-        Veiculo GetVeiculoById();
+        Veiculo GetVeiculoById(int id);
 
     }
 }

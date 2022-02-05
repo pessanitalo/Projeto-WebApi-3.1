@@ -61,3 +61,6 @@ C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\List
 C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.genruntimeconfig.cache
 C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.csproj.AssemblyReference.cache
 C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
