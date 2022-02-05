@@ -19,7 +19,7 @@ namespace ListaVeiculos.Api.Controllers
         [HttpGet]
         public IActionResult get()
         {
-            var result = _repository.GetAlunos();
+            var result = _repository.GetClientes();
             return Ok(result);
         }
 
@@ -27,7 +27,7 @@ namespace ListaVeiculos.Api.Controllers
         [HttpGet("{id}")]
         public IActionResult getId(int id)
         {
-            var cliente = _repository.GetAlunoBYId(id);
+            var cliente = _repository.GetClienteById(id);
             if (cliente == null) return BadRequest("Cliente não encontrado");
 
             return Ok(cliente);
@@ -37,7 +37,7 @@ namespace ListaVeiculos.Api.Controllers
         [HttpGet("clienteVeiculos/{id}")]
         public IActionResult getClienteByVeiculosId(int id)
         {
-            var cliente = _repository.GetAlunoVeiculosId(id);
+            var cliente = _repository.GetClienteVeiculosId(id);
             if (cliente == null) return BadRequest("Cliente não encontrado");
 
             return Ok(cliente);
@@ -60,7 +60,7 @@ namespace ListaVeiculos.Api.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, Cliente cliente)
         {
-            var clienteId = _repository.GetAlunoBYId(id);
+            var clienteId = _repository.GetClienteById(id);
             if (clienteId == null) return BadRequest("Cliente não encontrado");
 
             _repository.Update(cliente);
@@ -75,7 +75,7 @@ namespace ListaVeiculos.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var cliente = _repository.GetAlunoBYId(id);
+            var cliente = _repository.GetClienteById(id);
 
             if (cliente == null)
                 return BadRequest("Cliente não cadastrado");

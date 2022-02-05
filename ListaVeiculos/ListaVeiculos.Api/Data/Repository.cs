@@ -34,7 +34,7 @@ namespace ListaVeiculos.Api.Data
         }
 
 
-        public Cliente[] GetAlunos()
+        public Cliente[] GetClientes()
         {
             IQueryable<Cliente> query = _dataContext.Clientes;
 
@@ -42,7 +42,7 @@ namespace ListaVeiculos.Api.Data
             return query.ToArray();
         }
 
-        public Cliente GetAlunoVeiculosId(int id)
+        public Cliente GetClienteVeiculosId(int id)
         {
             IQueryable<Cliente> query = _dataContext.Clientes;
             query = query.Include(a => a.Veiculos).
@@ -51,7 +51,7 @@ namespace ListaVeiculos.Api.Data
             return query.FirstOrDefault();
         }
 
-        public Cliente GetAlunoBYId(int id)
+        public Cliente GetClienteById(int id)
         {
             IQueryable<Cliente> query = _dataContext.Clientes;
             query = query.AsNoTracking()

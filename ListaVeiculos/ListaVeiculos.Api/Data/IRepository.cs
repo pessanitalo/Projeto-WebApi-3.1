@@ -10,9 +10,9 @@ namespace ListaVeiculos.Api.Data
         bool SaveChanges();
 
         //clientes
-        Cliente[] GetAlunos();
-        Cliente GetAlunoVeiculosId(int id);
-        Cliente GetAlunoBYId(int id);
+        Cliente[] GetClientes();
+        Cliente GetClienteVeiculosId(int id);
+        Cliente GetClienteById(int id);
 
         //veiculos
         Veiculo[] Getveiculos();
