@@ -1,4 +1,6 @@
-﻿namespace ListaVeiculos.Api.Models
+﻿using System;
+
+namespace ListaVeiculos.Api.Models
 {
     public class Veiculo
     {

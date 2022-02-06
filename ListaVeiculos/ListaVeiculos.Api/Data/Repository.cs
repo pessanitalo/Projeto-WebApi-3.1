@@ -33,7 +33,7 @@ namespace ListaVeiculos.Api.Data
             return _dataContext.SaveChanges() > 0;
         }
 
-
+        //Clientes
         public Cliente[] GetClientes()
         {
             IQueryable<Cliente> query = _dataContext.Clientes;
@@ -46,7 +46,6 @@ namespace ListaVeiculos.Api.Data
         {
             IQueryable<Cliente> query = _dataContext.Clientes;
             query = query.Include(a => a.Veiculos).
-
             Where(a => a.Id == id);
             return query.FirstOrDefault();
         }
@@ -60,6 +59,8 @@ namespace ListaVeiculos.Api.Data
             return query.FirstOrDefault();
         }
 
+
+        //Veiculos
         public Veiculo[] Getveiculos()
         {
             IQueryable<Veiculo> query = _dataContext.Veiculos;
@@ -68,9 +69,12 @@ namespace ListaVeiculos.Api.Data
             return query.ToArray();
         }
 
-        public Veiculo[] GetAllVeiculosByClienteId()
+        public Veiculo getVeiculoClienteId(int id)
         {
-            throw new System.NotImplementedException();
+            IQueryable<Veiculo> query = _dataContext.Veiculos;
+            query = query.Include(a => a.Cliente).
+            Where(a => a.Id == id);
+            return query.FirstOrDefault();
         }
 
         public Veiculo GetVeiculoById(int id)

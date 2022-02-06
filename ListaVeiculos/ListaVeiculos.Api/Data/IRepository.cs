@@ -16,7 +16,7 @@ namespace ListaVeiculos.Api.Data
 
         //veiculos
         Veiculo[] Getveiculos();
-        Veiculo[] GetAllVeiculosByClienteId();
+        Veiculo getVeiculoClienteId(int id);
         Veiculo GetVeiculoById(int id);
 
     }

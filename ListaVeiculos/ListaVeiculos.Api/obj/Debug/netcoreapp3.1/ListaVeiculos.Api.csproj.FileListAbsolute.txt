@@ -63,3 +63,9 @@ C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\List
 C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\italo pessan\Desktop\Projetos\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.csproj.AssemblyReference.cache

@@ -26,6 +26,17 @@ namespace ListaVeiculos.Api
             services.AddControllers()
                 .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling
                 = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+            services.AddSwaggerGen(opt =>
+            {
+                opt.SwaggerDoc(
+                    "listadeveiculosapi",
+                    new Microsoft.OpenApi.Models.OpenApiInfo()
+                    {
+                        Title = "Lista de Veiculos Api",
+                        Version = "1.0"
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +48,13 @@ namespace ListaVeiculos.Api
             }
 
             app.UseRouting();
+
+            app.UseSwagger()
+            .UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/listadeveiculosapi/swagger.json", "listadeveiculosapiv1");
+                c.RoutePrefix = "";
+            });
 
             app.UseAuthorization();
 

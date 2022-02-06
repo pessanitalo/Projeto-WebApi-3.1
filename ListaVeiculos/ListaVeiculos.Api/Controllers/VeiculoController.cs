@@ -31,6 +31,16 @@ namespace ListaVeiculos.Api.Controllers
 
             return Ok(veiculo);
         }
+
+        //Ok
+        [HttpGet("veiculoCliente/{id}")]
+        public IActionResult getVeiculoClienteId(int id)
+        {
+            var veiculo = _repository.getVeiculoClienteId(id);
+            if (veiculo == null) return BadRequest("Veiculo não encontrado");
+
+            return Ok(veiculo);
+        }
         //ok
         [HttpPost]
         public IActionResult Post(Veiculo veiculo)
