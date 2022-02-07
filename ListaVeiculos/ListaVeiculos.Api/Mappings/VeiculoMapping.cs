@@ -10,6 +10,10 @@ namespace ListaVeiculos.Api.Mappings
         {
             builder.HasKey(p => p.Id);
 
+            builder.Property(p => p.Marca)
+                .IsRequired()
+                .HasColumnType("varchar(30)");
+
             builder.Property(p => p.Modelo)
                 .IsRequired()
                 .HasColumnType("varchar(20)");
@@ -21,6 +25,10 @@ namespace ListaVeiculos.Api.Mappings
             builder.Property(p => p.Placa)
                 .IsRequired()
                 .HasColumnType("varchar(7)");
+
+            builder.Property(p => p.AnoFabricacao)
+                .IsRequired()
+                .HasColumnType("varchar(4)");
 
             builder.ToTable("Veiculos");
         }

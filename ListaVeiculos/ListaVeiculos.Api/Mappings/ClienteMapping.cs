@@ -19,6 +19,10 @@ namespace ListaVeiculos.Api.Mappings
                 .IsRequired()
                 .HasColumnType("varchar(11)");
 
+            builder.Property(p => p.DataNascimento)
+                .IsRequired()
+                .HasColumnType("varchar(8)");
+
             builder.Property(p => p.Cpf)
                 .IsRequired()
                 .HasColumnType("varchar(11)");
