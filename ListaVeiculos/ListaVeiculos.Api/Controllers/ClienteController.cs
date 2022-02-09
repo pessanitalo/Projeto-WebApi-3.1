@@ -15,7 +15,7 @@ namespace ListaVeiculos.Api.Controllers
             _repository = repository;
         }
 
-        //Ok
+        //Ok retorna uma lista de clientes.
         [HttpGet]
         public IActionResult get()
         {

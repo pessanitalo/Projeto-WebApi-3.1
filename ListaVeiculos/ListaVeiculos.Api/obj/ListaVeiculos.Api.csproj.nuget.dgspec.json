@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\italo pessan\\Desktop\\Projetos\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj": {}
+    "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\italo pessan\\Desktop\\Projetos\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj": {
+    "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\italo pessan\\Desktop\\Projetos\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
+        "projectUniqueName": "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
         "projectName": "ListaVeiculos.Api",
-        "projectPath": "C:\\Users\\italo pessan\\Desktop\\Projetos\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
+        "projectPath": "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
         "packagesPath": "C:\\Users\\italo pessan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\italo pessan\\Desktop\\Projetos\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\obj\\",
+        "outputPath": "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -98,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
