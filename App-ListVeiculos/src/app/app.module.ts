@@ -1,3 +1,4 @@
+import { VeiculoService } from './veiculo/services/veiculo.service';
 import { VeiculoModule } from './veiculo/veiculo.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,6 +9,8 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClienteModule } from './cliente/cliente.module';
+import { FormsModule } from '@angular/forms';
+import { ClienteService } from './cliente/services/cliente.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { ClienteModule } from './cliente/cliente.module';
     NgbModule,
     ClienteModule,
     VeiculoModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

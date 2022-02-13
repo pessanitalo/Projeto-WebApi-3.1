@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { ListComponent } from './list/list.component';
 
 import { veiculoRoutingModule } from './veiculo.route';
+import { VeiculoService } from './services/veiculo.service';
 
 @NgModule({
     declarations: [
@@ -12,7 +13,7 @@ import { veiculoRoutingModule } from './veiculo.route';
         CommonModule,
         veiculoRoutingModule
     ],
-    providers: [],
+    providers: [VeiculoService],
     bootstrap: []
 })
 export class VeiculoModule { }

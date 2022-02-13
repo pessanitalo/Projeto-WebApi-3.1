@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+
 
 
 import { ListComponent } from './list/list.component';
 import { CommonModule } from '@angular/common';
 import { ClienteRoutingModule } from './cliente.route';
+
+import { ClienteService } from './services/cliente.service';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ClienteRoutingModule } from './cliente.route';
         CommonModule,
         ClienteRoutingModule
     ],
-    providers: [],
+    providers: [
+        ClienteService
+    ],
     bootstrap: []
 })
 export class ClienteModule { }

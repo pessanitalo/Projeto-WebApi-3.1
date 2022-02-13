@@ -37,7 +37,7 @@ namespace ListaVeiculos.Api.Controllers
         public IActionResult getVeiculoClienteId(int id)
         {
             var veiculo = _repository.getVeiculoClienteId(id);
-            if (veiculo == null) return BadRequest("Veiculo não encontrado");
+            if (veiculo == null) return BadRequest("Veículo não encontrado");
 
             return Ok(veiculo);
         }
