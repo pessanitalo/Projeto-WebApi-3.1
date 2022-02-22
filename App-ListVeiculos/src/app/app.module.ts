@@ -1,4 +1,3 @@
-import { VeiculoService } from './veiculo/services/veiculo.service';
 import { VeiculoModule } from './veiculo/veiculo.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,8 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClienteModule } from './cliente/cliente.module';
 import { FormsModule } from '@angular/forms';
-import { ClienteService } from './cliente/services/cliente.service';
-
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +23,9 @@ import { ClienteService } from './cliente/services/cliente.service';
     ClienteModule,
     VeiculoModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

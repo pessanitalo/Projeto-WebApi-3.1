@@ -1,5 +1,3 @@
-Lista de veiculos
-
 <div class="container">
     <table class="table table-striped">
         <thead>
@@ -9,22 +7,23 @@ Lista de veiculos
                 <th scope="col">Modelo</th>
                 <th scope="col">Cor</th>
                 <th scope="col">Placa</th>
-                <th scope="col">Ações</th>
                 <th scope="col">Ano Fabricação</th>
+                <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let veiculo of veiculos">
-    
                 <td> {{ veiculo.id }} </td>
                 <td> {{ veiculo.marca }} </td>
                 <td> {{ veiculo.modelo }} </td>
                 <td> {{ veiculo.cor}} </td>
                 <td> {{ veiculo.placa }} </td>
                 <td> {{ veiculo.anoFabricacao }} </td>
-                <button type="button" class="btn btn-primary">Detalhes</button>
-                <button type="button" class="btn btn-success">Editar</button>
-                <button type="button" class="btn btn-danger">Remover</button>
+                <div class="top">
+                    <button type="button" class="btn btn-primary">Detalhes</button>
+                    <button type="button" class="btn btn-success">Editar</button>
+                    <button type="button" class="btn btn-danger">Remover</button>
+                </div>
             </tr>
         </tbody>
     </table>

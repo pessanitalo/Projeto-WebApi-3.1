@@ -1,8 +1,9 @@
+import { Veiculo } from './../models/veiculo';
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/internal/Observable";
 import { environment } from "src/environments/environment";
-import { Veiculo } from "../models/veiculo";
+
 
 @Injectable()
 
@@ -14,5 +15,9 @@ export class VeiculoService {
 
     obterTodos(): Observable<Veiculo[]> {
         return this.http.get<Veiculo[]>(this.baseUrl);
+    }
+
+   createVeiculo(veiculo : Veiculo): Observable<Veiculo> {
+        return this.http.post<Veiculo>(this.baseUrl,veiculo);
     }
 }

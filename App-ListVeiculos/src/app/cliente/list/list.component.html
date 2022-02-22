@@ -1,6 +1,5 @@
-Lista de clientes
-
 <div class="container">
+    <button type="button" class="btn btn-primary" [routerLink]="['/cliente/new']">Adicionar Cliente</button>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -14,7 +13,7 @@ Lista de clientes
         </thead>
         <tbody>
             <tr *ngFor="let cliente of clientes">
-    
+
                 <td> {{ cliente.id }} </td>
                 <td> {{ cliente.nome }} </td>
                 <td> {{ cliente.telefone }} </td>
@@ -27,4 +26,3 @@ Lista de clientes
         </tbody>
     </table>
 </div>
-

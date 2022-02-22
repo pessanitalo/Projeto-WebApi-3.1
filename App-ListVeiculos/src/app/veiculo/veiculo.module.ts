@@ -4,14 +4,20 @@ import { ListComponent } from './list/list.component';
 
 import { veiculoRoutingModule } from './veiculo.route';
 import { VeiculoService } from './services/veiculo.service';
+import { NovoVeiculoComponent } from './novo-veiculo/novo-veiculo.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
-        ListComponent
+        ListComponent,
+        NovoVeiculoComponent
     ],
     imports: [
         CommonModule,
-        veiculoRoutingModule
+        veiculoRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+
     ],
     providers: [VeiculoService],
     bootstrap: []
