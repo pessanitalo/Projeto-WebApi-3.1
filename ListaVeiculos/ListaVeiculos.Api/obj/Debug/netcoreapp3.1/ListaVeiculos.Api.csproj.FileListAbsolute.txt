@@ -125,7 +125,6 @@ C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.csproj.AssemblyReference.cache
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.AssemblyInfoInputs.cache
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.AssemblyInfo.cs
@@ -140,3 +139,4 @@ C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.dll
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.pdb
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.genruntimeconfig.cache
+C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.csproj.AssemblyReference.cache

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "clzeJYV6+fMvVARawmo4IJ3KV6s5ipfQMLA3P6BHqkDufCnV+oo43YMRSuSVjrKmpj4Xr3SQSsJTBgOwKySqFw==",
+  "dgSpecHash": "IsLkVGNAA1lbqR0B8QGm0+ErVTPMzNAPLqX07qgrbq5wAk3cRep0mQ/eYwRUPgoIDQxjpVl2FqW2dOurrLL4Gg==",
   "success": true,
   "projectFilePath": "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\italo pessan\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\italo pessan\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\italo pessan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\italo pessan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\italo pessan\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\italo pessan\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\italo pessan\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
