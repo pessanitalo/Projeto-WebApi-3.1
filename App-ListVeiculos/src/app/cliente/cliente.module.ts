@@ -5,13 +5,17 @@ import { ClienteRoutingModule } from './cliente.route';
 import { ClienteService } from './services/cliente.service';
 import { NovoClienteComponent } from './novo-cliente/novo-cliente.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DetalhesClienteComponent } from './detalhes-cliente/detalhes-cliente.component';
+import { EditarClienteComponent } from './editar-cliente/editar-cliente.component';
 
 
 
 @NgModule({
     declarations: [
         ListComponent,
-        NovoClienteComponent
+        NovoClienteComponent,
+        DetalhesClienteComponent,
+        EditarClienteComponent
     ],
     imports: [
         CommonModule,

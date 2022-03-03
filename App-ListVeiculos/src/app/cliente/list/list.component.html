@@ -19,9 +19,12 @@
                 <td> {{ cliente.telefone }} </td>
                 <td> {{ cliente.cpf }} </td>
                 <td> {{ cliente.dataNascimento }} </td>
-                <button type="button" class="btn btn-primary">Detalhes</button>
-                <button type="button" class="btn btn-success">Editar</button>
-                <button type="button" class="btn btn-danger">Remover</button>
+                <button type="button" class="btn btn-primary" [routerLink]="['/cliente/detalhes']">Detalhes</button>
+                <button type="button" class="btn btn-success" [routerLink]="['/cliente/editar']">Editar</button>
+                <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                <button type="button" class="btn btn-primary" [routerLink]="['/veiculo/new']">
+                    <i class="fa fa-car"></i>
+                </button>
             </tr>
         </tbody>
     </table>
