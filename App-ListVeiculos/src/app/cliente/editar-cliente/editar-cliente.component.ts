@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Cliente } from '../models/cliente';
 
 @Component({
   selector: 'app-editar-cliente',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarClienteComponent implements OnInit {
 
-  constructor() { }
+  public cliente!: Cliente;
+
+  constructor(
+    private route: ActivatedRoute,
+  
+  ) { this.cliente = this.route.snapshot.data['cliente'] }
 
   ngOnInit(): void {
   }

@@ -6,17 +6,21 @@ import { Cliente } from "../models/cliente";
 
 @Injectable()
 
-export class ClienteService{
+export class ClienteService {
 
     baseUrl = `${environment.mainUrlAPI}cliente`;
-    
-    constructor(private http: HttpClient){}
 
-    obterTodos(): Observable<Cliente[]>{
+    constructor(private http: HttpClient) { }
+
+    obterTodos(): Observable<Cliente[]> {
         return this.http.get<Cliente[]>(this.baseUrl);
     }
 
-    addCliente(cliente : Cliente): Observable<Cliente> {
-        return this.http.post<Cliente>(this.baseUrl,cliente);
+    addCliente(cliente: Cliente): Observable<Cliente> {
+        return this.http.post<Cliente>(this.baseUrl, cliente);
+    }
+
+    obterPorId(id: number): Observable<Cliente> {
+        return this.http.get<Cliente>(`${this.baseUrl}/clienteVeiculos/${id}`);
     }
 }

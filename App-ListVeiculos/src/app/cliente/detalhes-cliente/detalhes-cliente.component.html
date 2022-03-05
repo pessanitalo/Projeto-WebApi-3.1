@@ -1,1 +1,48 @@
-<p>detalhes-cliente works!</p>
+<div class="container">
+    <br>
+    <span>Detalhes do Cliente: </span>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Data Nascimento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> {{ cliente.id }} </td>
+                <td> {{ cliente.nome }} </td>
+                <td> {{ cliente.telefone }} </td>
+                <td> {{ cliente.cpf }} </td>
+                <td> {{ cliente.dataNascimento }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+
+<div class="container">
+    <br>
+    <span>Detalhes do Cliente: </span>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Modelo do Veículo</th>
+                <th scope="col">Placa do Veiculo</th>
+                <th scope="col">Cor do Veiculo</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let veiculo of cliente.veiculos">
+                <td> {{ veiculo.modelo }} </td>
+                <td> {{ veiculo.placa }} </td>
+                <td> {{ veiculo.cor }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>

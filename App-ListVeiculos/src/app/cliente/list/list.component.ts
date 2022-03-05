@@ -19,12 +19,10 @@ export class ListComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log(this.clientes);
     this.clienteService.obterTodos()
       .subscribe(
         cliente => this.clientes = cliente,
         error => this.errorMessage);
-
   }
 
 }

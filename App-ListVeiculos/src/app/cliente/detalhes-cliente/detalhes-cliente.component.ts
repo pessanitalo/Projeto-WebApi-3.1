@@ -1,4 +1,8 @@
+
+import { Veiculo } from './../../veiculo/models/veiculo';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Cliente } from '../models/cliente';
 
 @Component({
   selector: 'app-detalhes-cliente',
@@ -7,7 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalhesClienteComponent implements OnInit {
 
-  constructor() { }
+  public cliente: Cliente;
+  
+  constructor(
+    private route: ActivatedRoute
+  ) { this.cliente = this.route.snapshot.data['cliente'] }
 
   ngOnInit(): void {
   }

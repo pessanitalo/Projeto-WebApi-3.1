@@ -7,6 +7,9 @@ import { NovoClienteComponent } from './novo-cliente/novo-cliente.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DetalhesClienteComponent } from './detalhes-cliente/detalhes-cliente.component';
 import { EditarClienteComponent } from './editar-cliente/editar-cliente.component';
+import { ClienteResolve } from './services/cliente.resolve';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 
@@ -22,9 +25,12 @@ import { EditarClienteComponent } from './editar-cliente/editar-cliente.componen
         ClienteRoutingModule,
         FormsModule,
         ReactiveFormsModule,
+        TooltipModule.forRoot(),
+        NgxMaskModule.forRoot()
     ],
     providers: [
-        ClienteService
+        ClienteService,
+        ClienteResolve
     ],
     bootstrap: []
 })
