@@ -5,11 +5,11 @@
     <hr>
     <div class="row">
         <div class="col-md-10">
-            <form novalidate="novalidate"  [formGroup]="Form">
+            <form novalidate="novalidate"  (ngSubmit)="novoVeiculo()" [formGroup]="form">
 
                 <div class="form-group">
                     <label class="control-label">Marca</label>
-                    <input class="form-control" id="cod" type="text" formControlName="cod" />
+                    <input class="form-control" id="marca" type="text" formControlName="marca" />
 
                 </div>
 

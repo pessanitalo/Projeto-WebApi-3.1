@@ -18,6 +18,10 @@ export class DetalhesClienteComponent implements OnInit {
   ) { this.cliente = this.route.snapshot.data['cliente'] }
 
   ngOnInit(): void {
+    //console.log('Cliente: ',this.route);
+    //console.log('id', this.cliente.id);
+    //const id = this.cliente.id ;
+    localStorage.setItem('id', this.cliente.id);
   }
 
 }

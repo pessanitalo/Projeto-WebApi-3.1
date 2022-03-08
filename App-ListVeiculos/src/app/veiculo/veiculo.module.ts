@@ -1,3 +1,4 @@
+import { VeiculoResolve } from './services/veiculo.resolve';
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
 import { ListComponent } from './list/list.component';
@@ -19,7 +20,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         ReactiveFormsModule,
 
     ],
-    providers: [VeiculoService],
+    providers: [
+        VeiculoService,
+        VeiculoResolve
+    ],
     bootstrap: []
 })
 export class VeiculoModule { }

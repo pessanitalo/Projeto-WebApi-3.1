@@ -15,9 +15,9 @@
             <tr>
                 <td> {{ cliente.id }} </td>
                 <td> {{ cliente.nome }} </td>
-                <td> {{ cliente.telefone }} </td>
-                <td> {{ cliente.cpf }} </td>
-                <td> {{ cliente.dataNascimento }} </td>
+                <td> {{ cliente.telefone | mask:"(00) 00000-0000"}} </td>
+                <td> {{ cliente.cpf | mask:"000.000.000-00"}} </td>
+                <td> {{ cliente.dataNascimento | mask:"00/00/0000"}} </td>
             </tr>
         </tbody>
     </table>
@@ -26,23 +26,30 @@
 
 <div class="container">
     <br>
-    <span>Detalhes do Cliente: </span>
+    <span>Detalhes do Veículo: </span>
+    <button type="button" class="btn btn-primary novoVeiculo" [routerLink]="['/veiculo/new']" tooltip="Adicionar Veículo" placement="bottom">Adicionar Veículo</button>
     <table class="table table-striped">
         <thead>
             <tr>
-                <th scope="col">Modelo do Veículo</th>
-                <th scope="col">Placa do Veiculo</th>
-                <th scope="col">Cor do Veiculo</th>
-
+                <th scope="col">Modelo</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Placa</th>
+                <th scope="col">Cor</th>
+                <th scope="col">Quilometragem</th>
+                <th scope="col">Ano Fabricação</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let veiculo of cliente.veiculos">
                 <td> {{ veiculo.modelo }} </td>
+                <td> {{ veiculo.marca }} </td>
                 <td> {{ veiculo.placa }} </td>
                 <td> {{ veiculo.cor }} </td>
+                <td> {{ veiculo.quilometragem }} </td>
+                <td> {{ veiculo.anoFabricacao }} </td>
             </tr>
         </tbody>
+        <button type="button" class="btn btn-success" [routerLink]="['/cliente/list']">Voltar</button>
     </table>
 </div>
 <br>

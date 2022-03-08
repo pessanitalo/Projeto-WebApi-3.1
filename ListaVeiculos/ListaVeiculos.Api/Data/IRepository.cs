@@ -1,4 +1,6 @@
 ﻿using ListaVeiculos.Api.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ListaVeiculos.Api.Data
 {
@@ -12,11 +14,11 @@ namespace ListaVeiculos.Api.Data
         //clientes
         Cliente[] GetClientes();
         Cliente GetClienteVeiculosId(int id);
-        Cliente GetClienteById(int id);
+        Task<Cliente> GetClienteById(int id);
 
         //veiculos
         Veiculo[] Getveiculos();
-        Veiculo getVeiculoClienteId(int id);
+        Task<Veiculo> getVeiculoClienteId(int id);
         Veiculo GetVeiculoById(int id);
 
     }

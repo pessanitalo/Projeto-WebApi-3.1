@@ -23,7 +23,6 @@ export class NovoClienteComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log(this.clienteForm);
     this.clienteForm = this.fb.group({
       nome: ['', [Validators.required]],
       telefone: ['', [Validators.required]],

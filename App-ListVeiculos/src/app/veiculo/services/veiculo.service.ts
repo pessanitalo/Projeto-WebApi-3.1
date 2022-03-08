@@ -20,4 +20,8 @@ export class VeiculoService {
    createVeiculo(veiculo : Veiculo): Observable<Veiculo> {
         return this.http.post<Veiculo>(this.baseUrl,veiculo);
     }
+
+    obterPorId(id: number): Observable<Veiculo> {
+        return this.http.get<Veiculo>(`${this.baseUrl}${id}`);
+    }
 }

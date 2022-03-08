@@ -1,8 +1,9 @@
 import { Veiculo } from './../models/veiculo';
-import { Observable } from 'rxjs/internal/Observable';
 import { VeiculoService } from './../services/veiculo.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,41 +13,50 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class NovoVeiculoComponent implements OnInit {
 
-
   veiculo!: Veiculo;
-  Form!: FormGroup;
+  form!: FormGroup;
 
   constructor(
     private fb: FormBuilder,
-    private service: VeiculoService
+    private veiculoService: VeiculoService,
+    private toastr: ToastrService,
+    private router: Router,
   ) { }
 
 
   ngOnInit(): void {
-    this.Form = this.fb.group({
+    const userId = localStorage.getItem('id');
+    this.form = this.fb.group({
       marca: ['', [Validators.required]],
       modelo: ['', [Validators.required]],
       cor: ['', [Validators.required]],
       placa: ['', [Validators.required]],
       quilometragem: ['', [Validators.required]],
       anoFabricacao: ['', [Validators.required]],
+      clienteId: userId
     })
   }
 
-//   novoVeiculo() {
-//     this.service.createVeiculo(this.veiculo)
-//       .subscribe(sucesso => { this.processarSucesso(sucesso) },
-//         error => { this.processarError(error) }
-//       )
-//   }
-// }
+  novoVeiculo() {
+    this.veiculo = Object.assign({}, this.veiculo, this.form.value);
+    this.veiculoService.createVeiculo(this.veiculo)
+      .subscribe(sucesso => { this.processarSucesso(sucesso) },
+        falha => { this.processarFalha(falha) }
+      )
+  }
 
+  processarSucesso(response: any) {
+    this.form.reset();
+    localStorage.removeItem('id');
+    let toast = this.toastr.success('Cliente cadastrado', 'Sucesso!');
+    if (toast) {
+      toast.onHidden.subscribe(() => {
+        this.router.navigate(['cliente/list'])
+      });
+    }
+  }
 
-// processarSucesso(response: any){
-
-// }
-
-// processarError(fail: any){
-
-// 
+  processarFalha(fail: any) {
+    this.toastr.error('Houve algum erro', 'Error!');
+  }
 }
