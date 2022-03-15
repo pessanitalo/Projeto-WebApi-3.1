@@ -12,7 +12,7 @@ export class ClienteService {
 
     constructor(private http: HttpClient) { }
 
-    obterTodos(): Observable<Cliente[]> {
+    public obterTodos(): Observable<Cliente[]> {
         return this.http.get<Cliente[]>(this.baseUrl);
     }
 

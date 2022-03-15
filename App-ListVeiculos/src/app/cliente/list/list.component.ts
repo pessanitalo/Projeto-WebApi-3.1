@@ -24,5 +24,4 @@ export class ListComponent implements OnInit {
         cliente => this.clientes = cliente,
         error => this.errorMessage);
   }
-
 }

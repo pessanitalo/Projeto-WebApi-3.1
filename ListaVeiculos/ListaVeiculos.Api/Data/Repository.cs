@@ -1,6 +1,5 @@
 ﻿using ListaVeiculos.Api.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -41,7 +40,7 @@ namespace ListaVeiculos.Api.Data
             //return await _dataContext.Clientes.ToListAsync();
             IQueryable<Cliente> query = _dataContext.Clientes;
 
-            query =  query.AsNoTracking().OrderBy(c => c.Id);
+            query = query.AsNoTracking().OrderBy(c => c.Id);
             return query.ToArray();
         }
 
@@ -64,12 +63,12 @@ namespace ListaVeiculos.Api.Data
 
 
         //Veiculos
-        public Veiculo[] Getveiculos()
+        public async Task<Veiculo[]> Getveiculos()
         {
             IQueryable<Veiculo> query = _dataContext.Veiculos;
 
             query = query.AsNoTracking().OrderBy(c => c.Id);
-            return query.ToArray();
+            return await query.ToArrayAsync();
         }
 
         public async Task<Veiculo> getVeiculoClienteId(int id)
@@ -81,13 +80,13 @@ namespace ListaVeiculos.Api.Data
             return await query.FirstOrDefaultAsync();
         }
 
-        public Veiculo GetVeiculoById(int id)
+        public async Task<Veiculo> GetVeiculoById(int id)
         {
             IQueryable<Veiculo> query = _dataContext.Veiculos;
             query = query.AsNoTracking()
                 .OrderBy(c => c.Id)
                 .Where(c => c.Id == id);
-            return query.FirstOrDefault();
+            return await query.FirstOrDefaultAsync();
         }
     }
 }

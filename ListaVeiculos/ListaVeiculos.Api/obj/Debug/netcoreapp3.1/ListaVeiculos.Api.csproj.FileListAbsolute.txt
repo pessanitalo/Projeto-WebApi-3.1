@@ -139,4 +139,3 @@ C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.dll
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.pdb
 C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.genruntimeconfig.cache
-C:\Users\italo pessan\Desktop\Portfólio\Api Simples\ListaVeiculos\ListaVeiculos.Api\obj\Debug\netcoreapp3.1\ListaVeiculos.Api.csproj.AssemblyReference.cache

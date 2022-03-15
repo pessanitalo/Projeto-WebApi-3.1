@@ -1,6 +1,7 @@
 ﻿using ListaVeiculos.Api.Data;
 using ListaVeiculos.Api.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace ListaVeiculos.Api.Controllers
 {
@@ -16,17 +17,17 @@ namespace ListaVeiculos.Api.Controllers
 
         //ok
         [HttpGet]
-        public IActionResult get()
+        public async Task<IActionResult> get()
         {
-            var result = _repository.Getveiculos();
+            var result = await _repository.Getveiculos();
             return Ok(result);
         }
 
         //ok
         [HttpGet("{id}")]
-        public IActionResult getId(int id)
+        public async Task<IActionResult> getId(int id)
         {
-            var veiculo = _repository.GetVeiculoById(id);
+            var veiculo = await _repository.GetVeiculoById(id);
             if (veiculo == null) return BadRequest("Veículo não encontrado");
 
             return Ok(veiculo);
