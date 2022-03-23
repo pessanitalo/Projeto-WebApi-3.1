@@ -6,9 +6,8 @@ import { VeiculoService } from "./veiculo.service";
 @Injectable()
 export class VeiculoResolve implements Resolve<Veiculo>{
 
-    constructor(private veiculoService: VeiculoService) {}
+    constructor(private veiculoService: VeiculoService) { }
 
-    
     resolve(route: ActivatedRouteSnapshot) {
         return this.veiculoService.obterPorId(route.params['id']);
     }
