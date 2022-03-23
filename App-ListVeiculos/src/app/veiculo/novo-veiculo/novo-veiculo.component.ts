@@ -48,7 +48,7 @@ export class NovoVeiculoComponent implements OnInit {
   processarSucesso(response: any) {
     this.form.reset();
     localStorage.removeItem('id');
-    let toast = this.toastr.success('Cliente cadastrado', 'Sucesso!');
+    let toast = this.toastr.success('Veículo cadastrado', 'Sucesso!');
     if (toast) {
       toast.onHidden.subscribe(() => {
         this.router.navigate(['cliente/list'])

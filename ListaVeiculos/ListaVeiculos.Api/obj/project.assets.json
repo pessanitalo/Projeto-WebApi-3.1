@@ -5748,11 +5748,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
+      "projectUniqueName": "C:\\Users\\italo pessan\\Desktop\\Estudos\\portfolio\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
       "projectName": "ListaVeiculos.Api",
-      "projectPath": "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
+      "projectPath": "C:\\Users\\italo pessan\\Desktop\\Estudos\\portfolio\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
       "packagesPath": "C:\\Users\\italo pessan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\italo pessan\\Desktop\\Portfólio\\Api Simples\\ListaVeiculos\\ListaVeiculos.Api\\obj\\",
+      "outputPath": "C:\\Users\\italo pessan\\Desktop\\Estudos\\portfolio\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
