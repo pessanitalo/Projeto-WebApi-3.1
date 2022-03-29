@@ -1,6 +1,8 @@
 import { ClienteService } from './../services/cliente.service';
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../models/cliente';
+import { ToastrService } from 'ngx-toastr';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 
 @Component({
@@ -12,6 +14,8 @@ export class ListComponent implements OnInit {
 
   constructor(
     private clienteService: ClienteService,
+    private toastr: ToastrService,
+    private spinner: NgxSpinnerService,
   ) { }
 
   public clientes?: Cliente[];
@@ -19,9 +23,20 @@ export class ListComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.clienteService.obterTodos()
-      .subscribe(
-        cliente => this.clientes = cliente,
-        error => this.errorMessage);
+    this.spinner.show();
+    this.getClientes();
+  }
+
+  public getClientes(): void {
+    this.clienteService.obterTodos().subscribe({
+      next: (clientes: Cliente[]) => {
+        this.clientes = clientes;
+     },
+      error: (error: any) => {
+        this.spinner.hide();
+        this.toastr.error('Erro ao carregar...', 'error');
+      },
+      complete: () => this.spinner.hide()
+    });
   }
 }

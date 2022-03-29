@@ -10,6 +10,8 @@ import { EditarClienteComponent } from './editar-cliente/editar-cliente.componen
 import { ClienteResolve } from './services/cliente.resolve';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { NgxMaskModule } from 'ngx-mask';
+import { ToastrModule } from 'ngx-toastr';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -25,8 +27,15 @@ import { NgxMaskModule } from 'ngx-mask';
         ClienteRoutingModule,
         FormsModule,
         ReactiveFormsModule,
+        NgxSpinnerModule,
         TooltipModule.forRoot(),
-        NgxMaskModule.forRoot()
+        NgxMaskModule.forRoot(),
+        ToastrModule.forRoot({
+            timeOut: 5000,
+            positionClass: 'toast-top-right',
+            preventDuplicates: true,
+            progressBar: true
+        })
     ],
     providers: [
         ClienteService,

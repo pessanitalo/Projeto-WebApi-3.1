@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
@@ -27,8 +28,10 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     VeiculoModule,
     HttpClientModule,
     FormsModule,
+    NgxSpinnerModule,
     BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(), PaginationModule.forRoot(),
+    ToastrModule.forRoot(), 
+    PaginationModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
