@@ -46,3 +46,5 @@ msbuild.wrn
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+ListaVeiculos/.vs/ListaVeiculos/v16/.suo
+ListaVeiculos/.vs/ListaVeiculos/DesignTimeBuild/.dtbcache.v2

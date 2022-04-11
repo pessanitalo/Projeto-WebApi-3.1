@@ -1,25 +1,30 @@
 <div class="container">
     <button type="button" class="btn btn-primary novo-cliente" [routerLink]="['/cliente/new']">Novo Cliente</button>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Nome</th>
-                <th scope="col">CPF</th>
-                <th scope="col">Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let cliente of clientes">
-                <td> {{ cliente.id }} </td>
-                <td> {{ cliente.nome }} </td>
-                <td> {{ cliente.cpf | mask:"000.000.000-00"}} </td>
+    <div class="flex-fill pr-3">
+        <div class="form-group mb-2">
+            <input type="text" class="form-control mr-2" [(ngModel)]="filtroLista"
+                placeholder="buscar por Cliente ou Cpf...">
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clientesFiltrados">
+                    <td> {{ cliente.id }} </td>
+                    <td> {{ cliente.nome }} </td>
+                    <td> {{ cliente.cpf | mask:"000.000.000-00"}} </td>
 
-                <button type="button" class="btn btn-primary"
-                    [routerLink]="['/cliente/detalhes', cliente.id]">Detalhes</button>
-                <button type="button" class="btn btn-success"
-                    [routerLink]="['/cliente/editar', cliente.id]">Editar</button>
-            </tr>
-        </tbody>
-    </table>
-</div>
+                    <button type="button" class="btn btn-primary"
+                        [routerLink]="['/cliente/detalhes', cliente.id]">Detalhes</button>
+                    <button type="button" class="btn btn-success"
+                        [routerLink]="['/cliente/editar', cliente.id]">Editar</button>
+                </tr>
+            </tbody>
+        </table>
+    </div>

@@ -12,13 +12,33 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class ListComponent implements OnInit {
 
+  public clientesFiltrados: any = [];
+  public clientes: any;
+  private _filtroLista: string = '';
+
+  public get filtroLista(): string {
+    return this._filtroLista;
+  }
+
+  public set filtroLista(value: string) {
+    this._filtroLista = value;
+    this.clientesFiltrados = this.filtroLista ? this.filtrarEventos(this.filtroLista) : this.clientes;
+  }
+
+  filtrarEventos(filtrarPor: string): Cliente[] {
+    filtrarPor = filtrarPor.toLowerCase();
+    return this.clientes.filter(
+      (evento: any) => evento.nome.toLowerCase().indexOf(filtrarPor) !== -1 || evento.cpf.toLowerCase().indexOf(filtrarPor) !== -1
+    )
+  }
+
   constructor(
     private clienteService: ClienteService,
     private toastr: ToastrService,
     private spinner: NgxSpinnerService,
   ) { }
 
-  public clientes?: Cliente[];
+  //public clientes?: Cliente[];
   public errorMessage?: string;
 
 
@@ -31,7 +51,8 @@ export class ListComponent implements OnInit {
     this.clienteService.obterTodos().subscribe({
       next: (clientes: Cliente[]) => {
         this.clientes = clientes;
-     },
+        this.clientesFiltrados = this.clientes;
+      },
       error: (error: any) => {
         this.spinner.hide();
         this.toastr.error('Erro ao carregar...', 'error');
