@@ -1,12 +1,11 @@
 ﻿{
-  "$schema": "https://json.schemastore.org/launchsettings.json",
-  "iisSettings": {
+    "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:42537",
-      "sslPort": 44335
-    }
+      "iisExpress": {
+        "applicationUrl": "http://localhost:42537",
+        "sslPort": 44305
+      }
   },
   "profiles": {
     "ListaVeiculos": {

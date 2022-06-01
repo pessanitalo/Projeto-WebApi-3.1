@@ -23,17 +23,7 @@ namespace ListaVeiculos.Api.Models
         [StringLength(8, MinimumLength = 8, ErrorMessage =
             "O campo {0} precisa ter oito caracteres!.")]
         public string DataNascimento { get; set; }
-        public IEnumerable<Veiculo> Veiculos { get; set; }
+        public IEnumerable<Veiculo>? Veiculos { get; set; }
 
-        public Cliente() { }
-
-        public Cliente(int id, string nome, string telefone, string cpf, string dataNascimento)
-        {
-            Id = id;
-            Nome = nome;
-            Telefone = telefone;
-            Cpf = cpf;
-            DataNascimento = dataNascimento;
-        }
     }
 }
