@@ -1,35 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\italo pessan\\Desktop\\Estudos\\portfolio\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj": {}
+    "C:\\Users\\italo\\Desktop\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\italo pessan\\Desktop\\Estudos\\portfolio\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj": {
+    "C:\\Users\\italo\\Desktop\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\italo pessan\\Desktop\\Estudos\\portfolio\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
+        "projectUniqueName": "C:\\Users\\italo\\Desktop\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
         "projectName": "ListaVeiculos.Api",
-        "projectPath": "C:\\Users\\italo pessan\\Desktop\\Estudos\\portfolio\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
-        "packagesPath": "C:\\Users\\italo pessan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\italo pessan\\Desktop\\Estudos\\portfolio\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\obj\\",
+        "projectPath": "C:\\Users\\italo\\Desktop\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\ListaVeiculos.Api.csproj",
+        "packagesPath": "C:\\Users\\italo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\italo\\Desktop\\Projeto-WebApi-3.1\\ListaVeiculos\\ListaVeiculos.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\italo pessan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\italo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -40,48 +37,52 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.3.6, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
-              "version": "[3.1.22, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.22, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.22, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[3.1.22, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.22, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.22, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.11.1, )"
+              "version": "[1.16.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.1, )"
             }
           },
           "imports": [
@@ -102,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

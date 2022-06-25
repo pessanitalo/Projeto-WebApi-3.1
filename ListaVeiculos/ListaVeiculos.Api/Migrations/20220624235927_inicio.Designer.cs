@@ -2,75 +2,97 @@
 using ListaVeiculos.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+
+#nullable disable
 
 namespace ListaVeiculos.Api.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220204142506_mappings")]
-    partial class mappings
+    [Migration("20220624235927_inicio")]
+    partial class inicio
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.22")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "6.0.6")
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("ListaVeiculos.Api.Models.Cliente", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Cpf")
                         .IsRequired()
+                        .HasMaxLength(11)
                         .HasColumnType("varchar(11)");
+
+                    b.Property<string>("DataNascimento")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("varchar(8)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
+                        .HasMaxLength(20)
                         .HasColumnType("varchar(20)");
 
                     b.Property<string>("Telefone")
                         .IsRequired()
+                        .HasMaxLength(11)
                         .HasColumnType("varchar(11)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Clientes", (string)null);
                 });
 
             modelBuilder.Entity("ListaVeiculos.Api.Models.Veiculo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    b.Property<string>("AnoFabricacao")
+                        .IsRequired()
+                        .HasMaxLength(4)
+                        .HasColumnType("varchar(4)");
 
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
                     b.Property<string>("Cor")
                         .IsRequired()
+                        .HasMaxLength(10)
                         .HasColumnType("varchar(10)");
+
+                    b.Property<string>("Marca")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.Property<string>("Modelo")
                         .IsRequired()
+                        .HasMaxLength(20)
                         .HasColumnType("varchar(20)");
 
                     b.Property<string>("Placa")
                         .IsRequired()
+                        .HasMaxLength(7)
                         .HasColumnType("varchar(7)");
+
+                    b.Property<int>("Quilometragem")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ClienteId");
 
-                    b.ToTable("Veiculos");
+                    b.ToTable("Veiculos", (string)null);
                 });
 
             modelBuilder.Entity("ListaVeiculos.Api.Models.Veiculo", b =>
@@ -79,6 +101,13 @@ namespace ListaVeiculos.Api.Migrations
                         .WithMany("Veiculos")
                         .HasForeignKey("ClienteId")
                         .IsRequired();
+
+                    b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("ListaVeiculos.Api.Models.Cliente", b =>
+                {
+                    b.Navigation("Veiculos");
                 });
 #pragma warning restore 612, 618
         }
